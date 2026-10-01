@@ -1,44 +1,42 @@
-# Sales Data Analysis using SQL
+Sales Data Analysis Using SQL
+Project Overview
 
-## 📌 Project Overview
-A beginner-friendly SQL project focused on creating a sales database, inserting data, and using SQL queries to analyze sales information.
+This is a beginner-friendly SQL project using SQLite and Python. The project focuses on creating tables, inserting customer and order data, joining tables, and filtering sales information using SQL queries.
 
-## 🛠️ Skills Used
-- SQL
-- CREATE TABLE
-- INSERT
-- SELECT
-- WHERE
-- GROUP BY
-- ORDER BY
-- Aggregate Functions
-- JOIN
+Tools and Technologies
+SQL
+SQLite
+Python
+Pandas
+Jupyter Notebook
+Project Objectives
+Create customer and order tables
+Understand primary keys and foreign keys
+Insert sample customer and order data
+Combine data from multiple tables using INNER JOIN
+Filter data using WHERE conditions
+Display SQL query results using Pandas
+SQL Query Used
+SELECT customers.name, customers.city, orders.amount
+FROM customers
+INNER JOIN orders
+ON customers.customer_id = orders.customer_id
+WHERE customers.city = "New York"
+AND orders.amount > 100;
+Result
 
-## 📂 Project Structure
+The query identifies customers from New York whose order amount is greater than 100.
+
+Name	City	Amount
+John	New York	150
+David	New York	120
+What I Learned
+
+Through this project, I learned the basics of working with relational data using SQL. I practiced creating tables, using primary and foreign keys, inserting data, joining tables, filtering records, and working with SQL results in Pandas.
+
+Project Structure
 sales_data_sql_analysis.ipynb
 README.md
-images/
+Author
 
-## 🔍 Key Analysis
-- Sales by product
-- Sales by customer
-- Total sales
-- Quantity analysis
-- Group-wise sales analysis
-
-## 📊 Results
-
-### Result 1
-![Sales Result](images/result1.png)
-
-### Result 2
-![Sales Result](images/result2.png)
-
-### Result 3
-![Sales Result](images/result3.png)
-
-## 🎯 Learning Outcome
-This project helped me understand the fundamentals of SQL and how SQL can be used to analyze business data.
-
-## 👨💻 Author
 Surendra J
